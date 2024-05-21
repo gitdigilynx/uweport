@@ -1,0 +1,106 @@
+<html xmlns:x="urn:schemas-microsoft-com:office:excel">
+							<head>
+								<!--[if gte mso 9]>
+								<xml>
+									<x:ExcelWorkbook>
+										<x:ExcelWorksheets>
+											<x:ExcelWorksheet>
+												<x:Name>Sheet 1</x:Name>
+												<x:WorksheetOptions>
+													<x:Print>
+														<x:ValidPrinterInfo/>
+													</x:Print>
+												</x:WorksheetOptions>
+											</x:ExcelWorksheet>
+										</x:ExcelWorksheets>
+									</x:ExcelWorkbook>
+								</xml>
+								<![endif]-->
+							</head>
+							<body><h2>Driver Summary</h2><table>
+							 <tr><td align="left"><strong>Driver Name</td><td align="left">Addy</strong></td></tr>
+							 <tr><td align="left"><strong>Driver Name</td><td >Addy</strong></td></tr>
+							<tr><td align="left"><strong>Lorry Number</strong></td><td align="left">GBE7146S</td></tr>
+							<tr><td align="left"><strong>Date:</strong></td><td align="left">27-06-2023</td></tr>
+							</table>	
+							 <h2>Order Summary</h2><table>
+							<thead>
+							  <tr>
+								<th align="left">Product(s)</th>       
+								<th align="left">Sold</th>		 
+							  </tr>
+							</thead>
+							<tbody><tr>
+							<td align="left">ESSO 11.3KG</td>
+							 <td align="left">10</td>		 
+						  </tr><tr>
+							<td align="left">ESSO 12.7KG</td>
+							 <td align="left">1</td>		 
+						  </tr></tbody>
+				  </table>
+				   <h2>Order Listing</h2>
+					<table>
+					<thead>
+					  <tr>
+						<th align="left">Address</th>
+						 <th colspan="4">Particulars</th>
+					  </tr>
+					</thead>
+					<tbody><tr>
+					<td align="left">abc test street (S)243535</td>
+					<td colspan="4" align="left">
+						<table>	
+							 <tr>
+							 <th align="left">Product(s)</th>
+							<th align="left">Quantity</th>
+							<th align="left">Price</th>
+							<th align="left">Total</th>
+							<th align="left">Payment Mode</th>	
+						  </tr>	
+							<tbody><tr>
+								<td align="left">ESSO 12.7KG</td>
+								<td align="left">1</td>
+								<td align="left">40.00</td>
+								<td align="left">40</td>
+								<td align="left">Cash</td>								
+							  </tr></tbody>
+					</table>
+					</td>        
+				  </tr><tr>
+					<td align="left">abc test street (S)243535</td>
+					<td colspan="4" align="left">
+						<table>	
+							 <tr>
+							 <th align="left">Product(s)</th>
+							<th align="left">Quantity</th>
+							<th align="left">Price</th>
+							<th align="left">Total</th>
+							<th align="left">Payment Mode</th>	
+						  </tr>	
+							<tbody><tr>
+								<td align="left">ESSO 11.3KG</td>
+								<td align="left">10</td>
+								<td align="left">34.00</td>
+								<td align="left">340</td>
+								<td align="left">Cash</td>								
+							  </tr></tbody>
+					</table>
+					</td>        
+				  </tr><tr>
+					<td colspan="4" align="left">
+						<table>	
+							 <tr>
+							 <th align="left">Today Payment</th>
+							<th align="left">Cash</th>
+							<th align="left">Bank Transfer</th>
+						  </tr>	
+							<tbody><tr>
+								<td align="left">380</td>
+								<td align="left">380</td>
+								<td align="left">0</td>							
+							  </tr></tbody>
+					</table>
+					</td>        
+				  </tr></tbody>
+							</table>
+					</body></html>

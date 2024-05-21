@@ -1,0 +1,353 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/*Dashboard*/
+.btn-primary{background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%) !important; border-radius: 8px !important;}
+.btn-primary:hover {background: linear-gradient(322.12deg, #2d4c66 -36.36%, #025193 101.09%) !important;}
+.blue-heading{color: #2294F1;}
+div .bg-light { background-color: #F5F5F5!important;}
+
+.dashboar_container {padding: 40px 40px 30px 20px;}
+.dashboard_topbox .first { background: #ECF2FF; color: #004FFA;}
+.dashboard_topbox .first h3, .dashboard_topbox .first h5{color: #004FFA;}
+.dashboard_topbox .two { background: #FDEDE8; color: #FF3D00;}
+.dashboard_topbox .two h3, .dashboard_topbox .two h5{color: #FF3D00;}
+.dashboard_topbox .three { background: #E6FFFA; color: #00735C;}
+.dashboard_topbox .three h3, .dashboard_topbox .three h5{color: #00735C;}
+.dashboard_topbox .four { background: #FEF5E5; color: #FFA300;}
+.dashboard_topbox .four h3, .dashboard_topbox .four h5{color: #FFA300;}
+.dashboard_topbox .col-12 img { height: 90px;}
+.dashboard_topbox .col-12 a { text-decoration: unset; }
+.dashboard_topbox .p-3:hover {box-shadow: 0px 0px 6px 0px #ddd;}
+.dashboar_container .bg-light.listing_table { padding: 20px 30px !important;}
+/*listing_table*/
+.listing_table table{padding: 25px 0; border: 0 !important;}
+.listing_table table thead {background: #474747; color: #fff;}
+.listing_table table thead th { padding: 20px !important; font-size: 18px;white-space: nowrap;}
+.listing_table table tbody tr td {padding: 18px 10px;border-bottom: 1px solid #E3E3E3; color: #707070;background: transparent !important;}
+.listing_table table tbody tr td.edit img {width: 22px;}
+.listing_table table tbody tr td.edit img:hover{opacity: 0.8;}
+.listing_table table tbody tr td a{text-decoration: unset;box-shadow: unset; outline: unset;}
+.listing_table table tbody tr td a i {width: 22px;height: 22px;position: relative; top: 3px;}
+.delete_user:hover i.fa:before {content: "\f09c";color: #0d6efd;}
+.unblock_user:hover i.fa:before {content: "\f05e";color: red;}
+a.approved_user path {fill: #15af15;}
+.edit a { margin: 0 5px !important;}
+.listing_table table { width: 100%;}
+.overflow-xscroll{overflow-x: scroll !important; padding-bottom: 30px;}
+.form-check.form-switch { display: flex; padding-top: 10px !important;float: right;}
+
+/*viewmore_detail page*/
+.viewmore_detail form input, .viewmore_detail2 form input { border: 0; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; height: 51px; font-size: 16px; font-weight: 600; border-radius: 8px; background: #fff !important; width: 100%;}
+.viewmore_detail form textarea, .viewmore_detail2 form textarea { border: 0; min-height: 140px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;font-size: 16px; font-weight: 600; border-radius: 8px;background: #fff !important;}
+.form_moredetail { border-radius: 12px;}
+.viewmore_detail form select, .viewmore_detail2 form select{border: 0; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; height: 51px; font-size: 16px; font-weight: 600; border-radius: 8px; width: 100%;max-width: 100%;}
+.viewmore_detail form input.create_btn.btn, .viewmore_detail2 form input.create_btn.btn { width: auto; background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%) !important; border-radius: 12px; height: auto; padding: 8px 20px; font-size: 14px; }
+.viewmore_detail form label, .viewmore_detail2 form label { font-weight: 700; color: #3c3c3c; margin-bottom: 5px;}
+/*.viewmore_detail form input[type="file"]:before, .viewmore_detail2 form input[type="file"]:before { content: 'Uploard Here'; background: #fff; position: absolute; left: 0; width: 100%; height: 100%; top: 0; display: flex; align-items: center; justify-content: center; }*/
+.viewmore_detail form input[type="file"], .viewmore_detail2 form input[type="file"] { position: relative;}
+button.register_btn { width: auto; display: flex; align-items: center;border: 0;background: transparent;}
+button.register_btn img { position: absolute; padding: 2px 0 0 10px; width: 28px;}
+button.register_btn input{background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%) !important; border-radius: 12px; height: auto; padding: 9px 20px 9px 36px; font-size: 14px; color: #fff; }
+form#pippin_registration_form{justify-content: flex-end;}
+.error { color: red;}
+div#pwdmessage .pwdvalid { color: green;}
+.viewmore_detail form .services_options input {width: fit-content !important;padding: 0 !important; height: auto !important;}
+.viewmore_detail form .services_options label { font-size: 14px; margin: 8px; margin-left: 0}
+input.services_select + .services_options { display: none; width: 100%; padding: 15px; background: #fff; top: 110px; z-index: 1; border: 1px solid #eee; border-radius: 12px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    max-height: 160px;
+    overflow-y: scroll;}
+input.services_select.active + .services_options.checkbox-btn.open { display: block; }
+div#pwdmessage { padding: 10px; border: 1px solid #eee; border-radius: 12px; background: #eee;}
+input.services_select { padding: 15px; cursor: pointer;}
+.services_options { position: absolute; top: 50px !important;}
+form#update_warehouse_form .services_options{top: 80px !important;}
+.viewmore_detail form .col-12{position: relative;}
+label.upload-image-label img { width: 100px; height: 100px; }
+label.upload-image-label span.pip { float: left; }
+ol#myFiless li {display: inline-block; position: relative;}
+label.upload-image-label span.pip span.remove { font-size: 12px; color: red; }
+.viewmore_detail div#gallery_wrapper .gallery_single_row { float: left; margin-right: 10px;position: relative;}
+span.button.remove, ol#myFiless button[onclick]{ color: white; padding: 0; height: 18px; width: 18px; border: 0; min-height: auto; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; background: red; border-radius: 50%; line-height: 1; position: absolute; top: 2px; right: 2px;}
+.viewmore_detail form .services_options input::before {content: ''; height: 1.3125rem; width: 1.3125rem; display: block; border: 1px solid #eee;}
+.viewmore_detail form .services_options input[type=checkbox]:checked::before{content: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E);}
+.viewmore_detail form .services_options input[type=checkbox]:checked + label {background: #2883cf; color: #fff; border-radius: 8px; padding: 2px 8px;}
+.viewmore_detail form .services_options label{padding: 2px 8px;}
+.services_options input {visibility: hidden; position: absolute;}
+.viewmore_detail form input.services_select { background-image: url(/wp-content/uploads/2023/05/down-arrwbla.png) !important; background-repeat: no-repeat !important; background-position: 95% 50% !important; background-size: 18px !important; background-color: #fff; }
+.viewmore_detail form input.services_select.active { background-image: url(/wp-content/uploads/2023/05/down-arrwbla_top.png) !important;}
+.viewmore_detail .rail_options input[type="radio"]:checked::after { left: -1px; top: -1px; }
+.viewmore_detail .rail_options input[type="radio"]:checked{background: #2b76b6 !important;}
+.viewmore_detail .rail_options input[type="radio"] {width: 13px; height: 13px; border: 2px solid #2b76b6;    float: left; min-width: auto;margin-top: 1px;}
+.viewmore_detail .rail_options label { margin: 0 0 0 8px;}
+.viewmore_detail .rail_field .rail_options { display: flex; align-items: center; flex-direction: row-reverse;margin-right: 20px;}
+.viewmore_detail .rail_field {display: flex; align-items: center; background: #fff; box-shadow: 0 0 10px #dddddd;
+    height: 51px; border-radius: 12px; padding: 10px;}
+.viewmore_detail .rail_options input[type=radio]:checked::before {width: 100%;height: 100%; margin: 0;}    
+div#logo_wrapper img {max-width: 130px; max-height: 100px;}
+form#update_warehouse_form {row-gap: 10px;}
+input#rail-yes:after, input#rail-yes:before { display: none;}
+.viewmore_detail form#add_warehouse_form .rail_field label {margin-right: 20px;}
+.viewmore_detail form#add_warehouse_form .rail_field label label {margin-right: 0px;}
+.dashboar_container .dataTables_filter {float: left !important;}
+.dashboar_container .dataTables_length {float: right !important;}
+.warehouse_logo + span.pip img.imageThumb { max-width: 130px; max-height: 100px; }
+div.dashboar_container .dataTables_wrapper .dataTables_paginate .paginate_button:hover, div.dashboar_container .dataTables_wrapper .dataTables_paginate .paginate_button.current{ background: #2196f6 !important; border-color: #2196f6 !important; color: #fff !important;}
+
+input.form-check-input[type="checkbox"]:before{background-color: #ffffff;border: 2px solid #248ce3; border-radius: 50%;}
+
+.notice-success { width: 100%; top: -20px; margin-left: 0; padding: 8px 20px; border-radius: 12px; background: #f0f7e7; border-color: #8BC34A; }
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dashboar_container.loading .spinner_wrapper ,.edit_popup.loading .spinner_wrapper{ position: fixed; width: 100%; height: 100%; background: #0000008a; top: 0; left: 0px; display: flex; align-items: center; justify-content: center; }
+
+.viewmore_detail input[type="file"]:before { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%) !important;cursor: pointer;}
+.viewmore_detail input[type="file"]:hover:before{background: #286aa1 !important;}
+.wp-admin input.upload-image-input:before {content: 'Photos to show your warehouse outside and inside';}
+.wp-admin input#logo:before {content: 'Company Logo';}
+.wp-admin input#logo.addlist_logo:before { content: 'Upload Photo';}
+.viewmore_detail input.addlist_upload-imageinput:before {content: 'Upload New Photo';}
+table#customer_post_enteries {width: calc(100% + 60%);}
+div#customer_post_enteries_wrapper {overflow-x: overlay;}
+.delete_user { color: red;font-size: 20px;}
+.delete_user:hover{ color: #b10000;}
+.unblock_user { font-size: 20px;}
+.viewmore_detail2 form label.error {font-size: 12px; color: #f72d2d;}
+p.popup-cls-btn {color: white; font-family: 'Poppins';font-size: 16px; text-decoration: none; position: relative;padding: 8px 15px;border-radius: 8px; border-color: #0d6efd;background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%) !important; cursor: pointer;    margin: 0 auto 30px;width: fit-content;}
+.confirmation-popup .modal-dialog.modal-lg {margin-top: 80px; max-width: 360px;}
+.confirmation-popup .modal-dialog.modal-lg .modal-content {border-radius: 40px;}
+.confirmation-popup { background: #0000007a;}
+.confirmation-popup h4 { font-size: 30px; color: #181818 !important; text-align: center; margin-top: 10px; }
+.confirmation-popup .succ_icon svg { width: 80px; height: 80px; color: #2196F3; }
+.confirmation-popup .succ_icon { text-align: center;    margin-top: 10px;    }
+.confirmation-popup p.pop-up-notification { text-align: center; font-size: 16px;    margin-bottom: 0;}
+div#wpbody-content .listing_table .spinner_wrapper { background: #00000061; position: fixed; width: 100%; height: 100%; z-index: 9; left: 0; bottom: 0; top: 0; display: flex; align-items: center; justify-content: center; }
+
+/*sidebar*/
+/*#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap { background: #474747;z-index: 9; height: 100v;}
+#adminmenu{ width: 260px; padding: 0 25px;}
+div#adminmenuwrap { width: 260px;}
+#wpcontent, #wpfooter {margin-left: 260px;}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu { background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%); padding: 3px 12px; border-radius: 12px; box-shadow: unset;}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:after{display: none;}
+#adminmenu div.wp-menu-image img { width: 18px; margin-right: 5px;}
+#adminmenu li a { font-weight: 600 !important;}
+#adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus{color: #fff; background: #474747;}
+#adminmenu .wp-submenu {width: 100%;}
+#adminmenu .wp-submenu li { padding: 4px 0;}
+#adminmenu .wp-submenu li a { font-size: 14px; color: #fff; border-radius: 8px;padding: 10px !important;}
+#adminmenu .wp-submenu li.current a { background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%); border-radius: 12px; box-shadow: unset;}
+#adminmenu .wp-submenu li a:hover{ background: linear-gradient(322.12deg, #355D80 -36.36%, #2292EF 101.09%); color: #fff; box-shadow: unset;}
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after, #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after{display: none;}*/
+/*warehouse_listing*/
+.add_warehouse_owner div#TB_ajaxContent { width: 100% !important; height: 100% !important;}
+
+/*multiselect dropdown*/
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.multiselect {
+    width: 170px;
+    font-size: 15px;
+    padding-bottom: 4px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    outline: none;
+}
+
+.multiselect:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.multiselect.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid transparent;
+}
+
+.multiselect > .title {
+    cursor: pointer;
+    height: 16px;
+    padding: 6px;
+}
+
+.multiselect > .title > .text {
+    max-width: 130px;
+    max-height: 25px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    line-height: 1.3em;
+}
+
+.multiselect > .title > .expand-icon,
+.multiselect > .title > .close-icon {
+    float: right;
+    border-radius: 50%;
+    padding: 0 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    transition: 0.2s;
+    display: none;
+}
+
+.multiselect.selection > .title > .expand-icon {
+    display: none;
+}
+
+.multiselect > .title > .expand-icon,
+.multiselect.selection > .title > .close-icon {
+    display: block;
+}
+
+.multiselect > .title > .close-icon:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgb(203, 32, 32);
+    color: #fff;
+}
+
+.multiselect > .container {
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 4px;
+    margin-left: -1px;
+    width: 170px;
+    transition: 0.2s;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    
+}
+
+.multiselect.active > .container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 0;
+}
+
+.multiselect:hover > .container {
+    border-top-color: rgba(0, 0, 0, 0.3);
+}
+
+.multiselect.active:hover > .container {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.multiselect > .container > option {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.multiselect > .container > option.selected {
+    background: rgb(122, 175, 233);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.multiselect > .container > option:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.multiselect.active > .container > option {
+    display: block;
+}
+

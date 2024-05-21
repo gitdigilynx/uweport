@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ARMember - Square payment gateway Addon v1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-11-17 08:17:43+0000\n"
+"Last-Translator: admin <testrepute123@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: autoload.php:302
+#: autoload.php:362
+#@ ARM_SQUARE
+msgid "Square"
+msgstr "Square"
+
+#: autoload.php:313
+#@ ARM_SQUARE
+msgid "Square For ARMember plugin requires ARMember Plugin installed and active."
+msgstr "Square For ARMember plugin requires ARMember Plugin installed and active."
+
+#: autoload.php:341
+#@ ARM_SQUARE
+msgid "You can find Application ID and Access Token in your Square account. To get more details, Please refer this"
+msgstr "You can find Application ID and Access Token in your Square account. To get more details, Please refer this"
+
+#: autoload.php:341
+#: autoload.php:351
+#@ ARM_SQUARE
+msgid "document"
+msgstr "document"
+
+#: autoload.php:350
+#@ ARM_SQUARE
+msgid "Please make sure you have set following callback URL in your square account."
+msgstr "Please make sure you have set following callback URL in your square account."
+
+#: autoload.php:351
+#@ ARM_SQUARE
+msgid "To get more information about how to set callback URL in your square account, please refer this"
+msgstr "To get more information about how to set callback URL in your square account, please refer this"
+
+#: autoload.php:395
+#@ ARM_SQUARE
+msgid "Square (if Square payment gateway is enabled)"
+msgstr "Square (if Square payment gateway is enabled)"
+
+#: autoload.php:414
+#@ ARM_SQUARE
+msgid "Payment Fail (Square)"
+msgstr "Payment Fail (Square)"
+
+#: autoload.php:457
+#@ ARM_SQUARE
+msgid "Payment Mode"
+msgstr "Payment Mode"
+
+#: autoload.php:460
+#@ ARM_SQUARE
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#: autoload.php:462
+#@ ARM_SQUARE
+msgid "Production"
+msgstr "Production"
+
+#: autoload.php:475
+#@ ARM_SQUARE
+msgid "Test Application ID"
+msgstr "Test Application ID"
+
+#: autoload.php:481
+#@ ARM_SQUARE
+msgid "Test Access Token"
+msgstr "Test Access Token"
+
+#: autoload.php:504
+#@ ARM_SQUARE
+msgid "Live Application ID"
+msgstr "Live Application ID"
+
+#: autoload.php:510
+#@ ARM_SQUARE
+msgid "Live Access Token"
+msgstr "Live Access Token"
+
+#: autoload.php:525
+#@ ARM_SQUARE
+msgid "Popup Title"
+msgstr "Popup Title"
+
+#: autoload.php:528
+#@ ARM_SQUARE
+msgid "This shortcode will be replaced with the user selected plan name."
+msgstr "This shortcode will be replaced with the user selected plan name."
+
+#: autoload.php:533
+#@ ARM_SQUARE
+msgid "Popup Button Title"
+msgstr "Popup Button Title"
+
+#: autoload.php:613
+#@ ARM_SQUARE
+msgid "Square does not support Free trial/plan amount."
+msgstr "Square does not support Free trial/plan amount."
+
+#: autoload.php:760
+#@ ARM_SQUARE
+msgid "Square does not support subscription payment."
+msgstr "Square does not support subscription payment."
+
+#: autoload.php:1017
+#@ ARM_SQUARE
+msgid "Your payment is failed. Please try again."
+msgstr "Your payment is failed. Please try again."
+
+#: autoload.php:1142
+#@ ARM_SQUARE
+msgid "An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr "An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+
+#: autoload.php:1147
+#@ ARM_SQUARE
+msgid "An unknown error occurred"
+msgstr "An unknown error occurred"
+
+#: autoload.php:397
+#@ ARM_SQUARE
+msgid "Square Payment Gateway does not support auto debit payment method."
+msgstr "Square Payment Gateway does not support auto debit payment method."
+
+#: autoload.php:316
+#@ ARM_SQUARE
+msgid "Square For ARMember plugin requires ARMember plugin installed with version 4.4 or higher."
+msgstr "Square For ARMember plugin requires ARMember plugin installed with version 4.4 or higher."
+
+#: autoload.php:487
+#@ ARM_SQUARE
+msgid "Test Location ID"
+msgstr "Test Location ID"
+
+#: autoload.php:516
+#@ ARM_SQUARE
+msgid "Live Location ID"
+msgstr "Live Location ID"
+

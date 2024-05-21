@@ -1,0 +1,421 @@
+
+/* globals global */
+alert('hjfj');
+
+            jQuery('#check').click(function(){
+            // alert($(this).is(':checked'));
+                jQuery(this).is(':checked') ? jQuery('#pippin_user_pass').attr('type', 'text') : jQuery('#pippin_user_pass').attr('type', 'password');
+            });
+       
+jQuery(function($){
+	var searchRequest;
+	$('.search-autocomplete').autoComplete({
+		minChars: 2,
+		source: function(term, suggest){
+			try { searchRequest.abort(); } catch(e){}
+			searchRequest = $.post(global.ajax, { search: term, action: 'search_site' }, function(res) {
+				suggest(res.data);
+			});
+		}
+	});
+});
+
+jQuery(document).ready( function () {
+
+    jQuery('#post_enteries').DataTable({
+       "order": [[ 0, "asc" ]],
+        "pageLength" : 10,
+    });
+      jQuery('#DataTables_Table_0').DataTable({
+       "order": [[ 0, "asc" ]],
+        "pageLength" : 10,
+    });
+    //   jQuery('#arm_tm_table').DataTable({
+    //   	  destroy: true,
+    //    "order": [[ 0, "asc" ]],
+    //     "pageLength" : 10,
+    // });
+
+
+
+
+
+	
+    jQuery('#arm_tm_table').DataTable({
+       "order": [[ 1, "asc" ]],
+        "pageLength" : 10,
+    });
+} );
+
+jQuery(document).on('submit', '#edit_owner_form', function(e){   
+    event.preventDefault();   
+   
+      jQuery('.edit_owner_btn').attr("disabled", true);
+      var formdata =    jQuery('#edit_owner_form' ).serialize();   
+      jQuery.ajax({
+        type:'POST',
+        url:'<?php echo admin_url( 'admin-ajax.php' ); ?>',
+        data:formdata, 
+        beforeSend: function() {
+          jQuery(".edit_owner_btn").addClass("disable_button");
+        },        
+        success: function(response){  
+          jQuery('#warehouse_enteries').load(document.URL + ' #warehouse_enteries');
+          jQuery(".edit_owner_btn").removeClass("disable_button");
+          var dataresponse = JSON.parse(response);
+          jQuery('html, body').animate({
+            scrollTop: jQuery("#notification").offset().top
+          }, 2000);
+          jQuery("#notification").css("display","block");
+          jQuery("#notification").addClass(dataresponse['owner']['status']);
+          jQuery("#notification").html(dataresponse['owner']['msg']);  
+          jQuery('.edit_owner_btn').attr("disabled", false);    
+          //jQuery("#edit_owner_form")[0].reset();
+           jQuery('.viewmore_detail').load(document.URL + ' .viewmore_detail');
+          
+         
+        },
+      });
+   
+  });
+
+jQuery(document).ready( function () {
+    jQuery('.arm_user_current_membership_list_table ').DataTable({
+       "order": [[ 1, "asc" ]],
+        "pageLength" : 10,
+    });
+} );
+
+
+      function changeValue(newVal) {
+     let output = document.getElementById('output');
+         output.innerHTML = "The selected input value in the range input is " + newVal;
+         
+    
+      }
+     //jQuery(".range-wrap").css("display","none");
+     // jQuery(":checkbox[name='term_cat']").attr("disabled", true);
+     // jQuery(".search").css("display","none");
+
+jQuery('.cities_name').on('change', function() {
+   jQuery('.cities_name').not(this).prop('checked', false);
+  if (jQuery(":checkbox[name='top_cities']").is(":checked"))
+{
+	topCityFilter();
+ 
+  jQuery(".range-wrap").css("display","block");
+ // jQuery(":checkbox[name='term_cat']").attr("disabled", false);
+ // jQuery(".search").css("display","block");
+
+}
+else
+{
+   
+ jQuery(".range-wrap").css("display","none");
+ // jQuery(":checkbox[name='term_cat']").attr("disabled", true);
+ // jQuery(".search").css("display","none");
+}
+});
+
+
+function topCityFilter(){
+	 		jQuery('#site-search').val(''); 
+
+			var cities = jQuery(".top_cities input:checked").attr('data-id');
+			var cities_name = jQuery(".top_cities input:checked").attr('data-name');
+			jQuery.ajax({
+				type: "post",
+				url: "<?php echo admin_url('admin-ajax.php'); ?>",
+				data: {
+					action: 'toCity_filter',          
+					top_cities : cities,
+					top_cities_name : cities_name,
+				},
+				beforeSend: function() {
+					add_loader(".middel-content");
+				},
+				success: function(res) {
+					remove_loader(".middel-content")
+					
+					jQuery(".md-6").html(res);
+				},
+			});
+
+	}
+
+      function filter_function(){
+      	var input_field = jQuery('#site-search').val();
+      	if(input_field.length >=1){
+      		jQuery(".search-btn").attr("disabled", false);
+      	}
+      	else{
+      		jQuery(".search-btn").attr("disabled", true);
+      	}
+      	jQuery('.cities_name:checked').removeAttr('checked');
+		var commodity = [];
+		jQuery.each(jQuery(".commodity input:checked"), function () {
+			commodity.push(jQuery(this).attr('data-id'));
+		});
+		var certification = [];
+		jQuery.each(jQuery(".certification input:checked"), function () {
+			certification.push(jQuery(this).attr('data-id'));
+		});
+		var additional_service = [];
+		jQuery.each(jQuery(".additional_service input:checked"), function () {
+			additional_service.push(jQuery(this).attr('data-id'));
+		});
+		var services = [];
+		jQuery.each(jQuery(".services input:checked"), function () {
+			services.push(jQuery(this).attr('data-id'));
+		});
+		var miles = parseInt(jQuery(".range").val());
+		if(isNaN(miles) || (miles <= 10)){
+			miles = "";
+		}
+		jQuery.ajax({
+			type: "post",
+			//dataType: "json",
+			url: "<?php echo admin_url('admin-ajax.php'); ?>",
+			data: {
+				action: 'product_filter',          
+				commodity : commodity,
+				certification : certification,
+				additional_service : additional_service,
+				services : services,
+				//top_cities : cities,
+				//area: area,
+				miles: parseInt(jQuery(".range").val()),
+				input: jQuery('#site-search').val(),
+			},
+			beforeSend: function() {
+				add_loader(".middel-content");
+			},
+			success: function(res) {
+				remove_loader(".middel-content")
+				
+				jQuery(".md-6").html(res);
+			},
+		});
+
+   // }
+ 
+  // else{
+  // 		jQuery.ajax({
+// 			type: "post",
+// 			//dataType: "json",
+// 			url: "<?php echo admin_url('admin-ajax.php'); ?>",
+// 			data: {
+// 				action: 'blog_data',          
+// 			},
+// 			beforeSend: function() {},
+// 			success: function(res) {
+				
+// 				jQuery(".md-6").html(res);
+// 			},
+// 		});
+  // }
+}
+   
+jQuery(document).ready(function(){
+var owl = jQuery('.thumbnail_slider');
+owl.owlCarousel({
+    items:2,
+    loop:true,
+    navigation:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    navigationText : ["<img alt='down' src='/logicore/wp-content/uploads/2023/05/arrow.png'>","<img alt='down' src='/logicore/wp-content/uploads/2023/05/arrow.png'>"]
+
+});
+
+    jQuery('.filter_titles').click(function(){
+		
+		if(jQuery(this).hasClass('active')){
+			
+    jQuery(this).removeClass('active');
+     jQuery(this).siblings('.checkbox-list').removeClass('open');
+}
+else{
+	
+	jQuery('.left-inner .filter_box').each(function () {
+			jQuery('.filter_titles ').removeClass('active');
+			jQuery('.checkbox-list').removeClass('open');
+		});
+    	jQuery(this).addClass('active');
+        jQuery(this).siblings('.checkbox-list').addClass('open');
+    }
+    });
+});
+
+
+
+
+const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val + ' miles';
+    bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+
+
+
+// user profile page script
+	
+jQuery('.dynamic-id').each(function(i, e){
+    jQuery(this).attr("id", "id_" + i);
+});
+jQuery('.dynamic-target').children().each(function(i, e){
+    jQuery(this).attr("data-target", "id_" + i);
+});
+
+jQuery('.dynamic-target span').click(function(){
+	jQuery(this).addClass('active').siblings().removeClass('active');
+	var target=jQuery(this).attr('data-target');
+	jQuery('#'+target).slideDown().siblings().slideUp();	
+});
+
+
+jQuery('.gfield_label').click(function(){
+	jQuery(this).siblings('.ginput_container_radio, .ginput_container_checkbox').slideToggle();	
+});
+jQuery('.gchoice').click(function(){
+	var text=jQuery(this).find('label').text();
+	jQuery(this).parents('.ginput_container_radio').slideUp().siblings('.gfield_label').text(text);
+	jQuery(this).parents('.ginput_container_checkbox').siblings('.gfield_label').text(text);
+});
+
+var myInput = document.getElementById("password");
+	var letter = document.getElementById("letter");
+	var capital = document.getElementById("capital");
+	var number = document.getElementById("number");
+	var length = document.getElementById("length");
+jQuery.validator.addMethod("striptagfields", function(value, element, param) {
+		var reg =/<(.|\n)*?>/g; 
+		//var reg1 = /<\/?[^>]+(>|$)/g
+		if (reg.test(value) == false) {
+			return true;
+		} else {
+			return false;
+		};
+	});
+
+
+	myInput.onfocus = function() {
+		validatePassword()
+	}
+
+	
+	
+	// When the user starts to type something inside the password field
+	myInput.onkeyup = function() {
+		// Validate lowercase letters
+		validatePassword()	
+		
+	}
+function validatePassword(){
+		var ispwdValid = false
+		var lowerCaseLetters = /[a-z]/g;
+		if(myInput.value.match(lowerCaseLetters)) {  
+			letter.classList.remove("pwdinvalid");
+			letter.classList.add("pwdvalid");
+			ispwdValid = true
+		} else {
+			letter.classList.remove("pwdvalid");
+			letter.classList.add("pwdinvalid");
+			ispwdValid = false
+		}
+		
+		// Validate capital letters
+		var upperCaseLetters = /[A-Z]/g;
+		if(myInput.value.match(upperCaseLetters)) {  
+			capital.classList.remove("pwdinvalid");
+			capital.classList.add("pwdvalid");
+			ispwdValid = true
+		} else {
+			capital.classList.remove("pwdvalid");
+			capital.classList.add("pwdinvalid");
+			ispwdValid = false
+		}
+
+		// Validate numbers
+		var numbers = /[0-9]/g;
+		if(myInput.value.match(numbers)) {  
+			number.classList.remove("pwdinvalid");
+			number.classList.add("pwdvalid");
+			ispwdValid = true
+		} else {
+			number.classList.remove("pwdvalid");
+			number.classList.add("pwdinvalid");
+			ispwdValid = false
+		}
+		
+		if(myInput.value.length >= 8) {
+			length.classList.remove("pwdinvalid");
+			length.classList.add("pwdvalid");
+			ispwdValid = true
+		} else {
+			length.classList.remove("pwdvalid");
+			length.classList.add("pwdinvalid");
+			ispwdValid = false
+		}	
+		if(ispwdValid){
+			document.getElementById("pwdmessage").style.display = "none";
+			$('input[type="submit"]').removeAttr('disabled');
+			reset('isPhoneValid')
+		}else{
+			jQuery('input[type="submit"]').attr('disabled','disabled');
+			document.getElementById("pwdmessage").style.display = "block";
+		}
+	}	
+
+	jQuery("#pippin_registration_form" ).validate({
+		rules: {
+			name: {
+				required:true,
+				striptagfields:true,
+				minlength: 3,
+				maxlength: 250
+			},
+			email:{required:true,striptagfields:true,email:true},
+			contact:{required:true,striptagfields:true},
+			password:{required:true, striptagfields:true},
+			address: {
+				required:true,
+				striptagfields:true
+			},
+			
+		} 
+	});
+ 
+function add_loader(parent_div, position_absolute = false) {
+    var position = '';
+    if (position_absolute == true) {
+        var position = 'position-absolute';
+    }
+    if (!jQuery(parent_div).find('.spinner_wrapper').length) {
+      jQuery(parent_div).append('<div class="spinner_wrapper"><div class="spinner_overlay"></div><div class="spinner_container ' + position + '"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>');
+    }
+}
+
+function remove_loader(parent_div) {
+    if (jQuery(parent_div).find('.spinner_wrapper').length) {
+        jQuery(parent_div).find('.spinner_wrapper').remove();
+    }
+}
+
+

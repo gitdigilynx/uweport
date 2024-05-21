@@ -1,0 +1,550 @@
+{
+    "SPDXID": "SPDXRef-wordpress",
+    "spdxVersion": "SPDX-2.3",
+    "creationInfo": {
+        "created": "2023-06-26T17:13:19.380Z",
+        "creators": [
+            "Organization: VMware, Inc."
+        ]
+    },
+    "name": "SPDX document for WordPress 6.2.2",
+    "dataLicense": "CC0-1.0",
+    "documentDescribes": [
+        "SPDXRef-wordpress"
+    ],
+    "documentNamespace": "wordpress-6.2.2",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-wordpress",
+            "name": "WordPress",
+            "versionInfo": "6.2.2",
+            "downloadLocation": "http://wordpress.org/wordpress-6.2.2.tar.gz",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress:wordpress:6.2.2:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress@6.2.2"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-Package-159bc72fa495f096",
+            "attributionTexts": [
+                "PkgID: pimple/pimple@v3.5.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/pimple/pimple@v3.5.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "pimple/pimple",
+            "versionInfo": "v3.5.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-17bb9a53df36b839",
+            "attributionTexts": [
+                "PkgID: publishpress/wordpress-version-notices@1.1.3"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/publishpress/wordpress-version-notices@1.1.3",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "GPL-3.0-only",
+            "licenseDeclared": "GPL-3.0-only",
+            "name": "publishpress/wordpress-version-notices",
+            "versionInfo": "1.1.3"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-a43fceb02d5e4bcf",
+            "attributionTexts": [
+                "PkgID: twentytwentyone@1.8.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:npm/twentytwentyone@1.8.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "hasFiles": [
+                "SPDXRef-File-20fffb2a3b2bc6ef"
+            ],
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "name": "twentytwentyone",
+            "versionInfo": "1.8.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-a89edbef2616a999",
+            "attributionTexts": [
+                "PkgID: psr/container@1.1.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/container@1.1.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/container",
+            "versionInfo": "1.1.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b71ae5003f5769af",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-ctype@v1.19.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-ctype@v1.19.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-ctype",
+            "versionInfo": "v1.19.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b8d72146bd540efd",
+            "attributionTexts": [
+                "PkgID: sabre/vobject@3.5.3"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/sabre/vobject@3.5.3",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "sabre/vobject",
+            "versionInfo": "3.5.3"
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-akismet",
+            "name": "Akismet",
+            "versionInfo": "5.2.0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/akismet.5.2.0.zip",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-akismet:wordpress-plugin-akismet:5.2.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-akismet@5.2.0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-all-in-one-seo-pack",
+            "name": "All in One SEO Pack",
+            "versionInfo": "4.3.9-0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.4.3.9.zip",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-all-in-one-seo-pack:wordpress-plugin-all-in-one-seo-pack:4.3.9-0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-all-in-one-seo-pack@4.3.9-0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-all-in-one-wp-migration",
+            "name": "All-in-One WP Migration",
+            "versionInfo": "7.76.0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.76.zip",
+            "licenseConcluded": "GPL-3.0-only",
+            "licenseDeclared": "GPL-3.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-all-in-one-wp-migration:wordpress-plugin-all-in-one-wp-migration:7.76.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-all-in-one-wp-migration@7.76.0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-amp",
+            "name": "AMP",
+            "versionInfo": "2.4.1",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/amp.2.4.1.zip",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-amp:wordpress-plugin-amp:2.4.1:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-amp@2.4.1"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-google-analytics-for-wordpress",
+            "name": "Google Analytics Dashboard",
+            "versionInfo": "8.16.0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.8.16.zip",
+            "licenseConcluded": "GPL-3.0-only",
+            "licenseDeclared": "GPL-3.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-google-analytics-for-wordpress:wordpress-plugin-google-analytics-for-wordpress:8.16.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-google-analytics-for-wordpress@8.16.0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-jetpack",
+            "name": "Jetpack",
+            "versionInfo": "12.2.1-0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/jetpack.12.2.1.zip",
+            "licenseConcluded": "GPL-2.0-or-later",
+            "licenseDeclared": "GPL-2.0-or-later",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-jetpack:wordpress-plugin-jetpack:12.2.1-0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-jetpack@12.2.1-0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-simple-tags",
+            "name": "Simple Tags",
+            "versionInfo": "3.8.0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/simple-tags.3.8.0.zip",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-simple-tags:wordpress-plugin-simple-tags:3.8.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-simple-tags@3.8.0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-w3-total-cache",
+            "name": "W3 Total Cache",
+            "versionInfo": "2.3.3-0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/w3-total-cache.2.3.3.zip",
+            "licenseConcluded": "GPL-2.0-only",
+            "licenseDeclared": "GPL-2.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-w3-total-cache:wordpress-plugin-w3-total-cache:2.3.3-0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-w3-total-cache@2.3.3-0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wordpress-plugin-wp-mail-smtp",
+            "name": "WordPress Mail SMTP",
+            "versionInfo": "3.8.0",
+            "downloadLocation": "https://downloads.wordpress.org/plugin/wp-mail-smtp.3.8.0.zip",
+            "licenseConcluded": "GPL-3.0-only",
+            "licenseDeclared": "GPL-3.0-only",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wordpress-plugin-wp-mail-smtp:wordpress-plugin-wp-mail-smtp:3.8.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wordpress-plugin-wp-mail-smtp@3.8.0"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-wp-cli",
+            "name": "WP-CLI",
+            "versionInfo": "2.8.1",
+            "downloadLocation": "https://github.com/wp-cli/wp-cli/archive/v2.8.1.tar.gz",
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:wp-cli:wp-cli:2.8.1:*:*:*:*:*:*:*"
+                },
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:bitnami/wp-cli@2.8.1"
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        },
+        {
+            "SPDXID": "SPDXRef-File-20fffb2a3b2bc6ef",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ffd3aa65842cec1c3f45071f3ba50cd5c08a6176"
+                }
+            ],
+            "fileName": "wp-content/themes/twentytwentyone/package.json"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-159bc72fa495f096"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-17bb9a53df36b839"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-a43fceb02d5e4bcf"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-a89edbef2616a999"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-b71ae5003f5769af"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-Package-b8d72146bd540efd"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-akismet"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-all-in-one-seo-pack"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-all-in-one-wp-migration"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-amp"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-google-analytics-for-wordpress"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-jetpack"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-simple-tags"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-w3-total-cache"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wordpress-plugin-wp-mail-smtp"
+        },
+        {
+            "spdxElementId": "SPDXRef-wordpress",
+            "relationshipType": "CONTAINS",
+            "relatedSpdxElement": "SPDXRef-wp-cli"
+        }
+    ]
+}
